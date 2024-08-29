@@ -2,5 +2,5 @@ steps:
 - name: 'gcr.io/cloud-builders/kubectl'
   args: ['apply', '-f', 'deployment.yaml']
   env:
-  - 'CLOUDSDK_COMPUTE_ZONE=asia-northeast1'
+  - 'CLOUDSDK_COMPUTE_ZONE=asia-northeast1-a'
   - 'CLOUDSDK_CONTAINER_CLUSTER=summer-2024-k-takahashi-sample'
