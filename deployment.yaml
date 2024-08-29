@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: form-app
-        image: asia-northeast1-docker.pkg.dev/sreake-intern/repo-summer-2024-k-takahashi/app:921b106a7cf23cbf7e073deb7be7a07d05f5966c
+        image: asia-northeast1-docker.pkg.dev/sreake-intern/repo-summer-2024-k-takahashi/app:b3d16955c53d39294bbad3caf971defe2ea01b1e
         ports:
         - containerPort: 80
 
