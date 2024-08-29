@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
       - name: form-app
-        image: asia-northeast1-docker.pkg.dev/sreake-intern/repo-summer-2024-k-takahashi/app:b3d16955c53d39294bbad3caf971defe2ea01b1e
+        image: asia-northeast1-docker.pkg.dev/sreake-intern/repo-summer-2024-k-takahashi/app:560fac434f8cd10f80d57108a849f7c0bfed4a71
         ports:
-        - containerPort: 80
+        - containerPort: 5000
 
 ---
 
@@ -29,8 +29,10 @@ metadata:
   labels:
     app: form-service
 spec:
+  type: ClusterIP
   ports:
   - port: 80
+    targetPort: 5000
     protocol: TCP
   selector:
     app: form-app
