@@ -3,4 +3,4 @@ steps:
   args: ['apply', '-f', 'deployment.yaml']
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=asia-northeast1'
-  - 'CLOUDSDK_CONTAINER_CLUSTER=クラスタ名'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=summer-2024-k-takahashi-sample'
